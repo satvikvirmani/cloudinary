@@ -1,0 +1,20 @@
+{
+  "name": "cloudinary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SatvikVirmani/cloudinary.git",
+  "author": "Satvik Virmani",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.5.1",
+    "gatsby": "^3.4.1",
+    "gatsby-source-cloudinary": "^0.1.14",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  }
+}
