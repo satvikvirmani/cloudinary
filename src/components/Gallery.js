@@ -1,6 +1,6 @@
-
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
+import './Gallery.css'
 
 const Gallery = () => {
     const data = useStaticQuery(
@@ -18,18 +18,18 @@ const Gallery = () => {
     );
     const images = data.allCloudinaryMedia.edges;
     return (
-        <div className="container">
-            {images.map((image, index) => (
-                <figure className="wave" key={`${index}-image`}>
-                    <img 
-                        src={image.node.secure_url} 
-                        alt="" >
-                    </img>
-                    <figcaption></figcaption>
-                </figure>
-                ))
-            }
-        </div>
+        <React.Fragment>
+            <div className="container">
+                {images.map((image, index) => (
+                        <img 
+                            key={`${index}-image`}
+                            src={image.node.secure_url} 
+                            alt="" >
+                        </img>
+                    ))
+                }
+            </div>
+        </React.Fragment>
     )
 };
 
