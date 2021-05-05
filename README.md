@@ -1,3 +1,3 @@
-# cloudinary
+# Cloudinary
 
-##An example of Gatsby + Cloudinary
+## An example of Gatsby + Cloudinary
